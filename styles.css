@@ -1,0 +1,98 @@
+/* Styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;  
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+  }
+  
+  nav li {
+    margin-left: 2rem;
+  }
+  
+  nav a {
+    color: #369; /* Changed from #fff */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #6cc; /* Changed from #ddd */
+  }
+  section {
+    padding: 2rem;
+  }
+  
+  .project {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .project.active {
+    opacity: 1;
+  }
+  
+  form input, 
+  form textarea {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  form button {
+    background: #369; /* Changed from #333 */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;  
+    transition: background 0.2s;
+  } 
+  
+  form button:hover {
+    background: #468; /* Changed from #444 */
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Add transitions/hover effects */
+  
+  nav a:hover {
+    color: #ddd;
+  }
+  
+  form button:hover {
+    background: #444;
+    cursor: pointer;
+  }
+
+  section h2 {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  
+  section h2.active {
+    transform: translateX(0);
+  }
+
+  .social-icons img {
+    height: 50px; 
+    transform: scale(0.8);
+  }
